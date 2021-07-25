@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.NoActionBar"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView android:id="@+id/back"
+                android:src="@drawable/bluearrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/privacyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#4f68ac"
+                android:paddingLeft="35dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="29sp"
+                android:text="Terms and Conditions" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loremText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="#808080"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus auctor libero in aliquet. Mauris non urna et dolor scelerisque sagittis et quis urna. Nunc posuere, libero et elementum vehicula, nisl tellus gravida urna, at semper felis diam vel ex. Suspendisse ut pellentesque ante. Quisque in felis vestibulum, egestas massa rutrum, blandit mi. Suspendisse potenti. Aliquam ultrices mauris vel velit ornare, ac luctus sapien viverra pretium tellus. Vivamus ullamcorper, purus quis tincidunt vehicula, diam velit pellentesque eros, sed pellent finibus. Sed accumsan tellus sagittis, fermentum mauris et, consequat quam. In urna justo, sollicitudin ac neque id, euismod ultrices massa. Etiam tempus vestibulum nisl, sed fringilla massa dignissim sed. Duis dignissim egestas est, quis volutpat ex faucibus id.\n\n
+
+Proin sollicitudin massa a elementum laoreet. Vestibulum at feugiat dui, nec dignissim metus. Praesent ligula tellus, pretium in porta et, laoreet quis massa. Sed in mollis ipsum, in commodo sapien. Nulla facilisi. Praesent venenatis diam et elit pharetra aliquam. Donec aliquam libero a diam hendrerit, a dapibus odio feugiat. Aenean et cursus diam, sed commodo eros. Nunc ac eros rhoncus, mattis urna a, iaculis nulla. Etiam pellentesque orci nisi, et sollicitudin odio blandit ut. Sed turpis turpis, feugiat luctus nunc vel, rhoncus iaculis sem. Duis vestibulum, orci nec maximus viverra, augue odio pellentesque orci, convallis dictum orci turpis a massa. Donec finibus tellus et leo malesuada malesuada justo at ligula." />
+    </LinearLayout>
+
+</ScrollView>

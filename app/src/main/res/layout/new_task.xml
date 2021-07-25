@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/newGoalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="@string/new_task" />
+
+
+
+
+    <Button
+        android:id="@+id/start_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newGoalText"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:text="Choose starting date"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/end_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newGoalText"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:text="Choose ending date"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray" />
+
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newGoalText"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="#63C45C"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:text="DONE"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/newGoalSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newGoalText"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:text="@string/save"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>

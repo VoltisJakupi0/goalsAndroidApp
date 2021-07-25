@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView android:id="@+id/back"
+        android:src="@drawable/bluearrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/historyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#4f68ac"
+        android:layout_marginStart="16dp"
+        android:paddingLeft="45dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="29sp"
+        android:text="History" />
+
+
+    <LinearLayout
+        android:id="@+id/filterButtons"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:text="All"
+            android:background="#4f68ac"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/finished"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:text="Finished"
+            android:background="#cfd0d0"
+            android:gravity="center"
+            android:layout_weight="33"
+            android:orientation="vertical"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/failed"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:text="Failed"
+            android:background="#cfd0d0"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/emptyView"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="225dp"
+            android:layout_height="112dp"
+            android:src="@drawable/clock" />
+
+        <TextView
+            android:id="@+id/emptyGoalsHeading"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#797979"
+            android:textSize="19sp"
+            android:text="History is empty!" />
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="13.5sp"
+            android:textColor="#797979"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/emptyGoalsDescription"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/historyText"
+
+        android:layout_marginTop="50dp"
+        android:clipToPadding="false"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:nestedScrollingEnabled="true">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

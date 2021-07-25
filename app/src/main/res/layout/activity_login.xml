@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.NoActionBar"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="80dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <!-- App Logo -->
+        <ImageView android:id="@+id/logo"
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!--Title TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reach your goals with us!"
+            android:id="@+id/title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#7B869B"
+            android:layout_marginBottom="70dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--User Email-->
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ellipsize="start"
+            android:hint="Email"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColorHint="#cccccc"
+            android:textColor="#7B869B"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <!-- User Password -->
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ellipsize="start"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:hint="Password"
+            android:textColor="#7B869B"
+            android:textColorHint="#cccccc"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_marginTop="10dp"
+            android:text="No account yet? Create one"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="11sp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+        <!--signup Link TextView-->
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/login"
+            android:layout_width="130dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="100dp"
+            android:text="Login"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

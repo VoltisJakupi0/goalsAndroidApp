@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView android:id="@+id/back"
+        android:src="@drawable/bluearrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/goalsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#4f68ac"
+            android:layout_marginStart="16dp"
+            android:paddingLeft="45dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="29sp"
+            android:text="@string/goals" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/emptyView"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="225dp"
+                        android:layout_height="112dp"
+                        android:src="@drawable/soon" />
+
+                    <TextView
+                        android:id="@+id/emptyGoalsHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#797979"
+                        android:textSize="19sp"
+                        android:text="@string/emptyGoalsHeading" />
+
+                    <TextView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:textSize="13.5sp"
+                        android:textColor="#797979"
+                        android:lineSpacingExtra="3sp"
+                        android:text="@string/emptyGoalsDescription"
+                        />
+            </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tasksRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/goalsText"
+            android:clipToPadding="false"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:nestedScrollingEnabled="true">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="32dp"
+        android:backgroundTint="#4f68ac"
+        android:src="@drawable/ic_baseline_add_24" />
+
+</RelativeLayout>
